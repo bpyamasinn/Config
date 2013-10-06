@@ -1,0 +1,22 @@
+{
+  "strict" : false,  // "use strict" を強制
+  "indent" : 4,  // インデントの深さ
+  "maxlen" : 80,  // 一行の最大長
+  "unused" : true,  // 宣言したきり使っていない変数を検出  
+
+  // グローバル変数へのアクセスの管理
+  "undef" : false,  // グローバル変数へのアクセスを禁止
+  "browser" : true,  // ブラウザ用のやつは許可
+  "dojo" :  true,  // dojo tool kit用のやつは許可
+  "devel" : true,  //  consoleやalertを許可
+  "debug"    : true,  // debugger を許可
+  "globals": {
+    "_": false,
+    "Backbone": false
+  },
+
+  // Relaxing Options - 危険性を認識した上で設定すること
+  "eqnull" : true,  // == null を許可
+  "expr" : true  // x || (x = 1); とかができるようにする
+}
+
